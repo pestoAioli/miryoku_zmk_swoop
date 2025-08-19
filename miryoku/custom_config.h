@@ -1,4 +1,7 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
-CONFIG_ZMK_BLE_CLEAR_BONDS_ON_START = y;
+// Enable secure Bluetooth for Pro
+#define CONFIG_BT_SMP 1
+#define CONFIG_BT_SIGNING 1
+#define CONFIG_BT_CTLR_LE_ENC 1
